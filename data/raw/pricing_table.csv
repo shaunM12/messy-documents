@@ -1,0 +1,37 @@
+plan,sku,product,category,unit_price_usd,min_order_qty,lead_days
+Basic,NW-1042,Ridgeline 2P Tent,tents,279.65,1,7
+Basic,NW-1043,Ridgeline 3P Tent,tents,330.65,1,7
+Basic,NW-1107,Alpine Down Sleeping Bag 15F,sleep,237.15,1,7
+Basic,NW-1108,Alpine Synthetic Sleeping Bag 30F,sleep,126.65,1,7
+Basic,NW-2010,Summit 45L Backpack,packs,186.15,1,7
+Basic,NW-2015,Summit 65L Backpack,packs,245.65,1,7
+Basic,NW-3301,Trailhead Headlamp 400,lighting,41.65,1,7
+Basic,NW-3302,Trailhead Headlamp 800,lighting,67.15,1,7
+Basic,NW-4020,Basecamp Stove,kitchen,101.15,1,7
+Basic,NW-4025,Basecamp Cook Set,kitchen,58.65,1,7
+Basic,NW-5100,Stormshell Jacket,apparel,211.65,1,7
+Basic,NW-5200,Cirrus Trekking Poles,accessories,109.65,1,7
+Pro,NW-1042,Ridgeline 2P Tent,tents,246.75,10,5
+Pro,NW-1043,Ridgeline 3P Tent,tents,291.75,10,5
+Pro,NW-1107,Alpine Down Sleeping Bag 15F,sleep,209.25,10,5
+Pro,NW-1108,Alpine Synthetic Sleeping Bag 30F,sleep,111.75,10,5
+Pro,NW-2010,Summit 45L Backpack,packs,164.25,10,5
+Pro,NW-2015,Summit 65L Backpack,packs,216.75,10,5
+Pro,NW-3301,Trailhead Headlamp 400,lighting,36.75,10,5
+Pro,NW-3302,Trailhead Headlamp 800,lighting,59.25,10,5
+Pro,NW-4020,Basecamp Stove,kitchen,89.25,10,5
+Pro,NW-4025,Basecamp Cook Set,kitchen,51.75,10,5
+Pro,NW-5100,Stormshell Jacket,apparel,186.75,10,5
+Pro,NW-5200,Cirrus Trekking Poles,accessories,96.75,10,5
+Enterprise,NW-1042,Ridgeline 2P Tent,tents,213.85,50,3
+Enterprise,NW-1043,Ridgeline 3P Tent,tents,252.85,50,3
+Enterprise,NW-1107,Alpine Down Sleeping Bag 15F,sleep,181.35,50,3
+Enterprise,NW-1108,Alpine Synthetic Sleeping Bag 30F,sleep,96.85,50,3
+Enterprise,NW-2010,Summit 45L Backpack,packs,142.35,50,3
+Enterprise,NW-2015,Summit 65L Backpack,packs,187.85,50,3
+Enterprise,NW-3301,Trailhead Headlamp 400,lighting,31.85,50,3
+Enterprise,NW-3302,Trailhead Headlamp 800,lighting,51.35,50,3
+Enterprise,NW-4020,Basecamp Stove,kitchen,77.35,50,3
+Enterprise,NW-4025,Basecamp Cook Set,kitchen,44.85,50,3
+Enterprise,NW-5100,Stormshell Jacket,apparel,161.85,50,3
+Enterprise,NW-5200,Cirrus Trekking Poles,accessories,83.85,50,3

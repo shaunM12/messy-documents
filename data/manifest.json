@@ -1,0 +1,47 @@
+[
+  {
+    "path": "data/raw/policy_handbook_v1.md",
+    "doc_id": "policy_handbook",
+    "version": "v1",
+    "visibility": [
+      "public"
+    ],
+    "updated_at": "2026-03-01"
+  },
+  {
+    "path": "data/raw/policy_handbook_v2.md",
+    "doc_id": "policy_handbook",
+    "version": "v2",
+    "visibility": [
+      "public"
+    ],
+    "updated_at": "2026-10-01"
+  },
+  {
+    "path": "data/raw/pricing_table.csv",
+    "doc_id": "pricing_table",
+    "version": "v1",
+    "visibility": [
+      "public"
+    ],
+    "updated_at": "2026-09-15"
+  },
+  {
+    "path": "data/raw/product_flyer.pdf",
+    "doc_id": "product_flyer",
+    "version": "v1",
+    "visibility": [
+      "public"
+    ],
+    "updated_at": "2026-04-01"
+  },
+  {
+    "path": "data/raw/internal_ops_notes.md",
+    "doc_id": "internal_ops_notes",
+    "version": "v1",
+    "visibility": [
+      "role:internal"
+    ],
+    "updated_at": "2026-09-30"
+  }
+]

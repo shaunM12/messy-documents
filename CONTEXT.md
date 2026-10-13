@@ -58,11 +58,14 @@ Pin versions in `pyproject.toml`. New dependencies require updating this section
 ├── scripts/
 │   └── make_corpus.py
 ├── data/
+│   ├── manifest.json                    # ordered ingest list: path, doc_id, version, visibility, updated_at
 │   ├── raw/
 │   │   ├── policy_handbook_v1.md        # plain text (headings/sections)
 │   │   ├── policy_handbook_v2.md        # updated version (replace test)
+│   │   ├── internal_ops_notes.md        # plain text, visibility ["role:internal"] (permission questions)
 │   │   ├── pricing_table.csv            # table
 │   │   └── product_flyer.pdf            # messy layout: 2 columns, header/footer, sidebar, embedded table
+│   ├── index/                           # SQLite DB + embedding cache (gitignored, rebuilt)
 │   └── eval/
 │       └── answer_key.jsonl
 ├── src/docsearch/
@@ -125,7 +128,10 @@ class Chunk:
 ## 9. Answer step + "I don't know"
 Return exactly `"I don't know"` with `abstained: true` if ANY:
 1. No visible chunks returned.
-2. Top dense cosine < `MIN_SIM` AND top BM25 score < `MIN_BM25` (both tuned on dev split).
+2. Top dense cosine < `MIN_SIM` AND top normalized BM25 < `MIN_BM25` (both tuned on dev split).
+   Normalized BM25 = top BM25 score / the query's maximum attainable BM25 score over the visible
+   chunks (Σ over query tokens of idf × (k1 + 1); tokens in no visible chunk contribute 0).
+   Range [0, 1], so the threshold does not depend on corpus size.
 3. Extractive mode: best sentence similarity to the question < `MIN_SENT_SIM`.
 4. LLM mode: model outputs "I don't know", OR cites a chunk_id not in the provided context.
 

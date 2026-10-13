@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# local index state, rebuilt from data/raw
+data/index/
+
+# eval logs: only the committed sample is tracked
+runs/*
+!runs/sample/
